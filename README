@@ -1,1 +1,66 @@
-Overview of the portfolio
+# Data Science Portfolio
+
+Welcome to my Data Science Portfolio! This repository showcases 10 projects I have completed, each highlighting a different aspect of data 
+science, including data cleaning, exploratory data analysis, machine learning, and deep learning.
+
+## Project List:
+
+1. **Project 1: Optimizing Global Chickens Import Market Strategies Using Machine Learning Models**
+   - *Description:* Built a machine learning model to predict Chickens import quantity (heads) and value (US$).
+   - *Problem Addressed:* Reducing costs and loses in poultry import-export businesses using best predictive model.
+   - *Tech Stack:* Python, scikit-learn, pandas, Jupyter.
+   - [More Details](./Project_1/README.md)
+
+2. **Project 2: House Price Prediction**
+   - *Description:* Developed a regression model to predict house prices based on various features.
+   - *Problem Addressed:* Helping buyers and sellers make informed decisions.
+   - *Tech Stack:* Python, XGBoost, matplotlib, pandas.
+   - [More Details](./Project_2/README.md)
+
+3. **Project 3: Sentiment Analysis of Product Reviews**
+   - *Description:* Applied Natural Language Processing (NLP) techniques to analyze customer sentiment from product reviews.
+   - *Problem Addressed:* Understanding customer satisfaction and improving products.
+   - *Tech Stack:* Python, NLTK, WordCloud, Jupyter.
+   - [More Details](./Project_3/README.md)
+
+4. **Project 4: Credit Card Fraud Detection**
+   - *Description:* Built a model to detect fraudulent credit card transactions using anomaly detection.
+   - *Problem Addressed:* Reducing financial loss due to fraudulent transactions.
+   - *Tech Stack:* Python, scikit-learn, pandas, Jupyter.
+   - [More Details](./Project_4/README.md)
+
+5. **Project 5: Predicting Diabetes Using Logistic Regression**
+   - *Description:* Developed a logistic regression model to predict diabetes based on patient data.
+   - *Problem Addressed:* Early detection of diabetes to provide timely medical interventions.
+   - *Tech Stack:* Python, scikit-learn, seaborn, pandas.
+   - [More Details](./Project_5/README.md)
+
+6. **Project 6: Global CO2 Emissions Analysis**
+   - *Description:* Performed an exploratory data analysis on global CO2 emissions.
+   - *Problem Addressed:* Identifying trends and key contributors to climate change.
+   - *Tech Stack:* Python, matplotlib, pandas.
+   - [More Details](./Project_6/README.md)
+
+7. **Project 7: Predicting Employee Attrition**
+   - *Description:* Used classification models to predict employee attrition for a company.
+   - *Problem Addressed:* Retaining key employees by identifying those likely to leave.
+   - *Tech Stack:* Python, scikit-learn, pandas, Jupyter.
+   - [More Details](./Project_7/README.md)
+
+8. **Project 8: Image Classification Using CNN**
+   - *Description:* Implemented a Convolutional Neural Network (CNN) to classify images of clothing.
+   - *Problem Addressed:* Automating the recognition of fashion items.
+   - *Tech Stack:* Python, TensorFlow, Keras.
+   - [More Details](./Project_8/README.md)
+
+9. **Project 9: Movie Recommendation System**
+   - *Description:* Built a movie recommendation system using collaborative filtering.
+   - *Problem Addressed:* Suggesting personalized movie recommendations to users.
+   - *Tech Stack:* Python, scikit-learn, pandas, Jupyter.
+   - [More Details](./Project_9/README.md)
+
+10. **Project 10: Stock Price Prediction Using LSTM**
+    - *Description:* Applied Long Short-Term Memory (LSTM) neural networks to predict stock prices.
+    - *Problem Addressed:* Helping investors make better decisions by predicting future stock trends.
+    - *Tech Stack:* Python, TensorFlow, Keras, pandas.
+    - [More Details](./Project_10/README.md)
