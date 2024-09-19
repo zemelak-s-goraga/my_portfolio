@@ -1,1 +1,26 @@
-project description
+
+README: Optimizing Global Live Chickens Import Market Strategies Using Machine Learning Models
+
+Project Overview:
+This project investigates the application of machine learning models to optimize global live chickens import market strategies. The primary goal was to accurately predict import quantities (heads) and values (USD) using historical trade data from FAOSTAT, covering over 200 countries between 1998 and 2013. The project aims to address the challenges faced by stakeholders—such as importers, exporters, and policymakers—in managing the complexities of the global live chickens market, which is influenced by factors like fluctuating demand, evolving trade policies, and economic conditions.
+
+Methodology:
+The analysis utilized a structured data science approach involving data preprocessing, model development, and evaluation. Key preprocessing steps included handling missing values through mean imputation, normalizing data to ensure consistent scaling, and encoding categorical variables using one-hot encoding. The dataset was split into training and testing sets (80-20 split) to develop and validate the models.
+Three machine learning models were developed: Random Forest, Support Vector Regression (SVR), and Gradient Boosting Regression. Hyperparameter tuning was conducted using GridSearchCV to optimize model performance. The models were evaluated based on Mean Squared Error (MSE) and R-squared values, with the Random Forest model outperforming others due to its ability to capture non-linear patterns in the data.
+
+Key Findings:
+Descriptive Analysis: Revealed strong positive correlations (0.97) between import quantities and values, with significant fluctuations during economic downturns such as the 2008 financial crisis.
+Model Performance: The Random Forest model achieved an R-squared value of 0.97 and an MSE of 21,183,281, demonstrating superior predictive accuracy compared to SVR and Gradient Boosting models.
+Feature Importance: Key drivers of import quantities and values included GDP, historical import data, and trade agreements, emphasizing the need for stakeholders to focus on these variables in strategic planning.
+
+Implications and Applications:
+The project highlights the potential of machine learning to enhance market forecasting accuracy, providing stakeholders with actionable insights for decision-making. The methodologies developed are not only applicable to the live chickens market but can also be extended to other agricultural sectors, enabling real-time market monitoring, supply chain optimization, and policy analysis. By leveraging advanced analytics, stakeholders can improve trade strategies, manage risks more effectively, and foster innovation in global agricultural markets.
+
+Ethical Considerations:
+Ethical considerations were prioritized, ensuring responsible data handling and minimizing biases. The findings emphasize equitable access to advanced analytics for all market participants, including small-scale farmers, and advocate for sustainable and fair trade practices.
+
+Future Directions:
+Future work could involve integrating real-time data sources, such as economic indicators and geopolitical events, to enhance the models’ predictive capabilities further. Expanding these methodologies to other commodities and agricultural products could offer broader applications, ultimately contributing to more efficient and resilient global trade systems.
+
+Contact:
+For further information or collaboration inquiries, please contact the project lead at zemelak.s.goraga@gmail.com
