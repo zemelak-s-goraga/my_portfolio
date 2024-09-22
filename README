@@ -1,66 +1,83 @@
 # Data Science Portfolio
 
-Welcome to my Data Science Portfolio! This repository showcases 10 projects I have completed, each highlighting a different aspect of data 
+Welcome to my Data Science Portfolio! This repository showcases 11 projects I have completed, each highlighting a different aspect of data 
 science, including data cleaning, exploratory data analysis, machine learning, and deep learning.
 
 ## Project List:
 
-1. **Project 1: Optimizing Global Chickens Import Market Strategies Using Machine Learning Models**
-   - *Description:* Built a machine learning model to predict Chickens import quantity (heads) and value (US$).
-   - *Problem Addressed:* Reducing costs and loses in poultry import-export businesses using best predictive model.
-   - *Tech Stack:* Python, scikit-learn, pandas, Jupyter.
-   - [More Details](./Project_1/README.md)
+Project 1: Optimizing Global Live Chickens Import Market Strategies Using Machine Learning Models
 
-2. **Project 2: House Price Prediction**
-   - *Description:* Developed a regression model to predict house prices based on various features.
-   - *Problem Addressed:* Helping buyers and sellers make informed decisions.
-   - *Tech Stack:* Python, XGBoost, matplotlib, pandas.
-   - [More Details](./Project_2/README.md)
+- Description: Applied machine learning models to optimize global live chicken import market strategies, predicting import quantities and values.
+- Problem Addressed: Addressing the challenges of managing complexities in the global live chickens market influenced by fluctuating demand, trade policies,   and economic conditions.
+- Tech Stack: Python, Random Forest, Support Vector Regression, Gradient Boosting.
+- [More Details](./Project_1/README.md)
 
-3. **Project 3: Sentiment Analysis of Product Reviews**
-   - *Description:* Applied Natural Language Processing (NLP) techniques to analyze customer sentiment from product reviews.
-   - *Problem Addressed:* Understanding customer satisfaction and improving products.
-   - *Tech Stack:* Python, NLTK, WordCloud, Jupyter.
-   - [More Details](./Project_3/README.md)
 
-4. **Project 4: Credit Card Fraud Detection**
-   - *Description:* Built a model to detect fraudulent credit card transactions using anomaly detection.
-   - *Problem Addressed:* Reducing financial loss due to fraudulent transactions.
-   - *Tech Stack:* Python, scikit-learn, pandas, Jupyter.
-   - [More Details](./Project_4/README.md)
+Project 2: Airplane Crash Data Analysis - Unveiling the Truth behind Aviation Safety
 
-5. **Project 5: Predicting Diabetes Using Logistic Regression**
-   - *Description:* Developed a logistic regression model to predict diabetes based on patient data.
-   - *Problem Addressed:* Early detection of diabetes to provide timely medical interventions.
-   - *Tech Stack:* Python, scikit-learn, seaborn, pandas.
-   - [More Details](./Project_5/README.md)
+- Description: Analyzed historical airplane crash data to provide insights into aviation safety trends and identify common causes of crashes.
+- Problem Addressed: Counteracting negative perceptions of air travel safety and guiding future safety enhancements.
+- Tech Stack: Python, data visualization, statistical analysis.
+- [More Details](./Project_2/README.md)
 
-6. **Project 6: Global CO2 Emissions Analysis**
-   - *Description:* Performed an exploratory data analysis on global CO2 emissions.
-   - *Problem Addressed:* Identifying trends and key contributors to climate change.
-   - *Tech Stack:* Python, matplotlib, pandas.
-   - [More Details](./Project_6/README.md)
+Project 3: Enhancing Restaurant Menu Personalization through Food Image Analysis
 
-7. **Project 7: Predicting Employee Attrition**
-   - *Description:* Used classification models to predict employee attrition for a company.
-   - *Problem Addressed:* Retaining key employees by identifying those likely to leave.
-   - *Tech Stack:* Python, scikit-learn, pandas, Jupyter.
-   - [More Details](./Project_7/README.md)
+- Description: Used food image classification to analyze menu items' popularity and presentation preferences, improving restaurant menu personalization.
+- Problem Addressed: Optimizing menu offerings and enhancing customer satisfaction through data-driven insights.
+- Tech Stack: Python, Convolutional Neural Networks (CNN), data visualization.
+- [More Details](./Project_3/README.md)
 
-8. **Project 8: Image Classification Using CNN**
-   - *Description:* Implemented a Convolutional Neural Network (CNN) to classify images of clothing.
-   - *Problem Addressed:* Automating the recognition of fashion items.
-   - *Tech Stack:* Python, TensorFlow, Keras.
-   - [More Details](./Project_8/README.md)
+Project 4: Analysis of Live Cattle Exports in Different Countries
 
-9. **Project 9: Movie Recommendation System**
-   - *Description:* Built a movie recommendation system using collaborative filtering.
-   - *Problem Addressed:* Suggesting personalized movie recommendations to users.
-   - *Tech Stack:* Python, scikit-learn, pandas, Jupyter.
-   - [More Details](./Project_9/README.md)
+- Description: Analyzed trends in live cattle exports, identifying top exporters and exploring the relationship between export quantity and value.
+- Problem Addressed: Informing strategic decisions in international trade and agricultural policies.
+= Tech Stack: Python, data visualization, regression analysis.
+- [More Details](./Project_4/README.md)
 
-10. **Project 10: Stock Price Prediction Using LSTM**
-    - *Description:* Applied Long Short-Term Memory (LSTM) neural networks to predict stock prices.
-    - *Problem Addressed:* Helping investors make better decisions by predicting future stock trends.
-    - *Tech Stack:* Python, TensorFlow, Keras, pandas.
-    - [More Details](./Project_10/README.md)
+Project 5: SpaceX Falcon 9 Launch Success Prediction
+
+- Description: Predicted the success of SpaceX Falcon 9 first stage landings using historical launch data.
+  Problem Addressed: Optimizing rocket landing success rates to reduce launch costs.
+- Tech Stack: Python, SQL, interactive data visualization tools.
+- [More Details](./Project_5/README.md)
+
+Project 6: Exploratory Data Analysis of Vehicle Data
+
+- Description: Conducted an exploratory data analysis of vehicle features such as horsepower, engine size, and their impact on market price.
+- Problem Addressed: Understanding the factors that influence vehicle pricing and guiding consumer decisions.
+- Tech Stack: Python, data visualization, statistical analysis.
+- [More Details](./Project_6/README.md)
+
+Project 7: Predictive Analysis of Live Sheep Marketing Dataset to Develop Optimization Strategies
+
+- Description: Developed predictive models to forecast export quantities and values of live sheep, identifying key trends and optimization strategies.
+- Problem Addressed: Enhancing market performance and sustainability in the global trade of live sheep.
+- Tech Stack: Python, regression models, statistical analysis.
+- [More Details](./Project_7/README.md)
+
+Project 8: Analyzing Socioeconomic Data Using Python, R, and PowerBI
+
+- Description: Analyzed global population growth, unemployment rates, consumer expenditures, and postage prices using multi-tool visualizations.
+- Problem Addressed: Identifying socioeconomic trends and understanding key economic indicators.
+- Tech Stack: Python, R, PowerBI.
+- [More Details](./Project_8/README.md)
+
+Project 9: Analyzing Crime, Education, and Demographic Trends Using Multi-Tool Visualizations
+- Description: Explored relationships between crime rates, educational outcomes, and demographic trends using Python, R, and Power BI.
+- Problem Addressed: Understanding the interplay between crime, education, and demographic factors.
+- Tech Stack: Python, R, PowerBI.
+- [More Details](./Project_9/README.md)
+
+Project 10: Cyclistic Bike-Share Data Analysis - Navigating Speedy Success
+
+- Description: Analyzed Cyclistic’s bike-share data to understand differences in usage between casual riders and annual members.
+- Problem Addressed: Informing marketing strategies to convert casual riders into annual members.
+- Tech Stack: SQL, Google Sheets, R programming.
+- [More Details](./Project_10/README.md)
+
+Project 11: Analyzing Public Discourse and Sentiment in Tweets about the US Capitol Riots
+
+- Description: Analyzed public sentiment, engagement trends, and key discussion topics surrounding the US Capitol Riots using tweets.
+- Problem Addressed: Understanding public discourse and sentiment during significant political events.
+- Tech Stack: Python, NLP (VADER, TextBlob), spaCy, visualization tools.
+- [More Details](./Project_11/README.md)
