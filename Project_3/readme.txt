@@ -1,31 +1,37 @@
+README: Optimizing Global Live Pig Export Market Strategies Using Machine Learning Models
 
-README: Enhancing Restaurant Menu Personalization through Food Image Analysis
-Project Overview
-This project explores the use of food image classification to enhance restaurant menu personalization, aiming to identify popular food items, analyze presentation preferences, and assess the accuracy of a classification model. By examining a dataset of 24,000 food images across 35 categories, including popular items like Hot Dogs, Crispy Chicken, and Sandwiches, the study provides insights to optimize menu design. The findings reveal opportunities for promoting underrepresented items like Sushi and Chai, while highlighting the need for model improvements to enhance predictive accuracy.
+Project Overview:
+This project explores the application of machine learning models to optimize strategies in the global live pig export market. The primary objective was to analyze historical data on export quantities (heads) and values (USD) from FAOSTAT to uncover trends, identify inefficiencies, and cluster countries based on export behaviors. The dataset covers over 150 countries between 1998 and 2013. This project addresses the complexities exporters face, such as fluctuating demand, trade policy changes, and economic conditions, to offer data-driven insights that can guide strategic decisions.
 
-Methodology
-The project followed a comprehensive data science approach involving data preprocessing, model development, and evaluation:
+Methodology:
+The project followed a structured data science pipeline, including data preprocessing, model development, and evaluation. Key preprocessing steps involved:
+Handling missing data using mean imputation.
+Normalizing the data for consistent scaling.
+Encoding categorical variables with one-hot encoding.
 
-Data Preprocessing: Images were resized, normalized, and augmented to improve model training. The dataset was split into training and testing sets to ensure robust evaluation.
-Model Development: A Convolutional Neural Network (CNN) model was built using layers of convolution, pooling, and dense connections to classify images into food categories.
-Evaluation: The model’s performance was assessed using metrics such as accuracy, precision, recall, and F1-score. Confusion matrices were used to identify areas where the model excelled and struggled.
-Visualization: Visual tools like bar charts and heatmaps were used to showcase the distribution of food categories, presentation preferences, and model performance metrics.
-Key Findings
-Class Representation: Popular items like Hot Dogs, Crispy Chicken, and Sandwiches dominate the dataset, indicating strong consumer interest, while underrepresented items offer promotion potential.
-Model Performance: The CNN model showed low overall accuracy (around 9%), pointing to challenges with imbalanced classes and complex visual features, particularly with underrepresented categories.
-Consumer Preferences: Brightness and color tone were found to significantly influence consumer choices, highlighting the importance of visually appealing images in menu presentation.
-Implications and Applications
-The study emphasizes the potential of food image classification in guiding menu personalization. Popular items can be prominently featured, and underrepresented items can be strategically promoted. Insights into image attributes like brightness can be used to enhance food presentation, particularly for digital menus and online ordering platforms.
+The dataset was split into training and testing sets (80-20 split) to validate the models effectively. Several machine learning techniques were employed:
 
-Ethical Considerations
-This analysis used publicly available data from Kaggle, ensuring compliance with data use policies and ethical standards. The recommendations are designed to enhance customer experiences without compromising data privacy, and findings are presented transparently to support ethical business practices.
+K-Means Clustering to categorize exporting countries based on similar export behaviors.
+Association Rule Mining to discover frequent patterns of high export quantities and values.
+Principal Component Analysis (PCA) to reduce dimensionality and visualize clustering patterns.
+Random Forest Regression to predict export quantities and values, accounting for non-linear relationships.
+GridSearchCV was used for hyperparameter tuning to optimize model performance. Model evaluation was based on Mean Squared Error (MSE) and R-squared metrics to assess predictive accuracy.
 
-Future Directions
-To further improve menu personalization through food image analysis, the following steps are recommended:
+Key Findings:
+Trend Analysis: The analysis revealed a strong correlation between export quantities and values over time, with significant shifts around major economic events like the 2008 financial crisis.
+Value-to-Quantity Ratios: Some countries displayed inefficiencies in value-to-quantity ratios, signaling potential for improved pricing strategies.
+Clustering Analysis: Exporting countries were effectively clustered into groups based on similar behaviors, which can guide market entry strategies and trade partnerships.
+Association Rules: Frequently occurring high-export patterns were identified, providing insights into peak trading periods and high-demand markets.
+PCA Visualization: PCA helped reduce the complexity of the dataset and offered clear visual patterns in export behavior clusters.
 
-Improve Data Balance: Increase the number of images for underrepresented items and diversify the dataset to achieve better class representation.
-Refine Model Architecture: Explore advanced models, such as transfer learning with pre-trained networks like MobileNetV2, to enhance classification accuracy.
-Enhance Presentation: Utilize insights from the analysis to improve the visual appeal of food items, especially on online platforms where presentation significantly impacts consumer choices.
-Incorporate Feedback: Integrate customer feedback and reviews to continuously refine and align menu offerings with evolving consumer preferences.
-Contact
+Implications and Applications:
+This project demonstrates the potential of machine learning in optimizing global pig export market strategies. By uncovering inefficiencies, clustering countries with similar export behaviors, and predicting export trends, stakeholders can make informed decisions that enhance trade strategies. These methods can be extended to other agricultural commodities and can aid in supply chain optimization, policy analysis, and market monitoring.
+
+Ethical Considerations:
+This project ensured responsible data handling and minimized biases in analysis. Emphasis was placed on equitable access to data-driven insights for all market participants, including small-scale producers. The project also advocates for fair and sustainable trade practices to support market transparency.
+
+Future Directions:
+Future work could involve integrating real-time data sources like economic indicators, trade policies, and geopolitical factors to further enhance model accuracy. Extending these techniques to other agricultural products and commodities could offer wider applications, contributing to more efficient and resilient global trade systems.
+
+Contact:
 For further information or collaboration inquiries, please contact the project lead at zemelak.s.goraga@gmail.com.
