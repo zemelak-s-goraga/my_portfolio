@@ -40,11 +40,11 @@ Project 5: Real-Time Fraud Detection System for a Global Bank Using Big Data Arc
 - Tech Stack: Hadoop (HDFS, YARN, Hive, HBase), Spark, Kafka, NiFi, Solr.
 - [More Details](./Project_5/README.md)
 
-Project 6: Exploratory Data Analysis of Vehicle Data
+Project 6: Analysis of Cattle Export Marketing Dataset Using Big Data Tools
 
-- Description: Conducted an exploratory data analysis of vehicle features such as horsepower, engine size, and their impact on market price.
-- Problem Addressed: Understanding the factors that influence vehicle pricing and guiding consumer decisions.
-- Tech Stack: Python, data visualization, statistical analysis.
+- Description: Analyzed historical cattle export data (1961-2013) to identify trade patterns and predict future export trends using big data technologies.
+- Problem Addressed: Improved forecasting of cattle export quantities to optimize agricultural trade strategies and market efficiency.
+- Tech Stack: PySpark, Hive, NiFi, Kafka, HDFS, Docker.
 - [More Details](./Project_6/README.md)
 
 Project 7: Predictive Analysis of Live Sheep Marketing Dataset to Develop Optimization Strategies
