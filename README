@@ -26,12 +26,11 @@ Project 3: Optimizing Global Live Pig Export Market Strategies Using Machine Lea
 - Tech Stack: Python, K-Means Clustering, Association Rule Mining, PCA, Random Forest.
 - [More Details](./Project_3/README.md)
 
+Project 4: Airplane Crash Data Analysis - Unveiling the Truth behind Aviation Safety
 
-Project 4: Analysis of Live Cattle Exports in Different Countries
-
-- Description: Analyzed trends in live cattle exports, identifying top exporters and exploring the relationship between export quantity and value.
-- Problem Addressed: Informing strategic decisions in international trade and agricultural policies.
-= Tech Stack: Python, data visualization, regression analysis.
+- Description: Analyzed historical airplane crash data to provide insights into aviation safety trends and identify common causes of crashes.
+- Problem Addressed: Counteracting negative perceptions of air travel safety and guiding future safety enhancements.
+- Tech Stack: Python, data visualization, statistical analysis.
 - [More Details](./Project_4/README.md)
 
 Project 5: SpaceX Falcon 9 Launch Success Prediction
