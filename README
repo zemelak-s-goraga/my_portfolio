@@ -54,11 +54,11 @@ Project 7: Predictive Analysis of Live Sheep Marketing Dataset to Develop Optimi
 - Tech Stack: Python, regression models, statistical analysis.
 - [More Details](./Project_7/README.md)
 
-Project 8: Analyzing Socioeconomic Data Using Python, R, and PowerBI
+Project 8: Predictive Analysis of SpaceX Falcon 9 Rocket Launch Success
 
-- Description: Analyzed global population growth, unemployment rates, consumer expenditures, and postage prices using multi-tool visualizations.
-- Problem Addressed: Identifying socioeconomic trends and understanding key economic indicators.
-- Tech Stack: Python, R, PowerBI.
+- Description: Predicted the success of Falcon 9 rocket landings using historical SpaceX launch data to optimize future launches and reduce costs.
+- Problem Addressed: Enhanced decision-making by identifying factors influencing rocket landing success rates to improve cost efficiency and reliability.
+- Tech Stack: Python, pandas, scikit-learn, Folium, Plotly Dash, SQL.
 - [More Details](./Project_8/README.md)
 
 Project 9: Analyzing Crime, Education, and Demographic Trends Using Multi-Tool Visualizations
