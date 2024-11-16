@@ -33,11 +33,11 @@ Project 4: Airplane Crash Data Analysis - Unveiling the Truth behind Aviation Sa
 - Tech Stack: Python, data visualization, statistical analysis.
 - [More Details](./Project_4/README.md)
 
-Project 5: SpaceX Falcon 9 Launch Success Prediction
+Project 5: Real-Time Fraud Detection System for a Global Bank Using Big Data Architecture
 
-- Description: Predicted the success of SpaceX Falcon 9 first stage landings using historical launch data.
-  Problem Addressed: Optimizing rocket landing success rates to reduce launch costs.
-- Tech Stack: Python, SQL, interactive data visualization tools.
+- Description: Developed a real-time fraud detection system leveraging big data technologies to identify and prevent unauthorized transactions and suspicious activities in the banking sector.
+- Problem Addressed: Mitigated the risk of financial fraud by enabling real-time detection and response, ensuring compliance with global banking regulations.
+- Tech Stack: Hadoop (HDFS, YARN, Hive, HBase), Spark, Kafka, NiFi, Solr.
 - [More Details](./Project_5/README.md)
 
 Project 6: Exploratory Data Analysis of Vehicle Data
