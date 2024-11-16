@@ -1,0 +1,180 @@
+
+---
+title: "DSC640-Week9&10_excercise_Visualization"
+author: "Zemelak Goraga"
+date: "`r Sys.Date()`"
+output: pdf_document
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "C:/Users/zemel/Burn")
+
+
+# Global setup code
+options(repos = c(CRAN = "https://cloud.r-project.org/"))
+
+
+library(sf)
+
+library(viridis)
+library(utils)
+
+library(dplyr)
+library(ggplot2)
+library(reshape2)
+library(readr)
+library(readxl)
+library(plotly)
+```
+
+```{r}
+# Install necessary packages
+if (!requireNamespace("sf", quietly = TRUE)) install.packages("sf")
+if (!requireNamespace("ggplot2", quietly = TRUE)) install.packages("ggplot2")
+if (!requireNamespace("viridis", quietly = TRUE)) install.packages("viridis")
+if (!requireNamespace("utils", quietly = TRUE)) install.packages("utils")
+
+```
+
+```{r}
+# Load necessary libraries
+library(sf)
+library(ggplot2)
+library(viridis)
+library(utils)
+
+```
+
+
+
+```{r}
+# Set working directory
+setwd("C:/Users/zemel/Burn/")
+```
+
+
+```{r}
+# Check current working directory
+getwd()
+
+# Set working directory (ensure this is correct for your system)
+setwd("C:/Users/zemel/Burn/")
+
+```
+
+
+```{r}
+# Import datasets
+df_birth_rate <- read_csv('birth-rate.csv')
+df_crime_rates <- read_csv('crimeratesbystate-formatted.csv')
+df_education <- read_csv('education.csv')
+df_tabn084 <- read_excel('tabn084.xls')
+df_tabn106 <- read_excel('tabn106.xls')
+df_tabn146 <- read_excel('tabn146.xls')
+```
+
+
+```{r}
+# Inspect datasets
+print(head(df_birth_rate))
+print(head(df_crime_rates))
+print(head(df_education))
+print(head(df_tabn084))
+print(head(df_tabn106))
+print(head(df_tabn146))
+```
+
+
+```{r}
+# Install the tidyr package if you haven't already
+# install.packages("tidyr")
+
+# Load the tidyr package
+library(tidyr)
+
+# Your data wrangling steps
+df_birth_rate <- df_birth_rate %>% fill(everything(), .direction = "down")
+df_crime_rates <- df_crime_rates %>% fill(everything(), .direction = "down")
+df_education <- df_education %>% fill(everything(), .direction = "down")
+df_tabn084 <- df_tabn084 %>% fill(everything(), .direction = "down")
+df_tabn106 <- df_tabn106 %>% fill(everything(), .direction = "down")
+df_tabn146 <- df_tabn146 %>% fill(everything(), .direction = "down")
+
+```
+
+
+```{r}
+# Reshape the DataFrame using melt
+df_birth_rate_melted <- melt(df_birth_rate, id.vars = "Country", 
+                             variable.name = "Year", 
+                             value.name = "BirthRate")
+
+# Convert the 'Year' column to integers
+df_birth_rate_melted$Year <- as.integer(df_birth_rate_melted$Year)
+
+# Display the first few rows of the reshaped DataFrame
+print(head(df_birth_rate_melted))
+
+```
+
+```{r}
+# Histogram (R)
+
+ggplot(df_education, aes(x = math)) +
+  geom_histogram(bins = 20, fill = "blue", color = "black", alpha = 0.7) +
+  geom_density(aes(y = ..count..), color = "red", adjust = 1) +
+  labs(title = "Distribution of SAT Math Scores", x = "SAT Math Score", y = "Frequency") +
+  theme_minimal()
+
+```
+
+```{r}
+# Box Plot (R)
+
+ggplot(df_education, aes(x = state, y = dropout_rate)) +
+  geom_boxplot(fill = "blue", color = "black", alpha = 0.7) +
+  labs(title = "Dropout Rates by State", x = "State", y = "Dropout Rate") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+# Bullet Chart (R)
+
+target <- 500
+actual <- mean(df_education$math, na.rm = TRUE)
+
+fig <- plot_ly(
+  type = "indicator",
+  mode = "gauge+number+delta",
+  value = actual,
+  title = list(text = "Average SAT Math Score"),
+  gauge = list(
+    axis = list(range = list(0, 800)),
+    steps = list(
+      list(range = c(0, 500), color = "lightgray"),
+      list(range = c(500, 800), color = "gray")
+    ),
+    threshold = list(line = list(color = "red", width = 4), thickness = 0.75, value = target)
+  )
+)
+fig
+
+```
+
+```{r}
+# Line Plot for Average Birth Rate Over Years (R)
+
+average_birth_rate_per_year <- df_birth_rate_melted %>%
+  group_by(Year) %>%
+  summarize(average_birth_rate = mean(BirthRate, na.rm = TRUE))
+
+ggplot(average_birth_rate_per_year, aes(x = Year, y = average_birth_rate)) +
+  geom_line(color = "blue") +
+  labs(title = "Trend of Average Birth Rate Over Years", x = "Year", y = "Average Birth Rate") +
+  theme_minimal() +
+  geom_point(color = "red", size = 2)
+
+```
+
