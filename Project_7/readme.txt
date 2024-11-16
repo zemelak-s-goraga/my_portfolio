@@ -1,42 +1,51 @@
-README: Analyzing Socioeconomic Data Using Python, R, and PowerBI
-Project Overview
-This project analyzes four distinct socioeconomic datasets using Python, R, and PowerBI to explore global population growth, U.S. unemployment trends, consumer expenditures, and postage price changes. Each tool—Python, R, and PowerBI—demonstrates unique strengths in data manipulation, statistical analysis, and visualization, providing comprehensive insights into complex socioeconomic trends over multiple decades.
 
-Methodology
-The project employed a multi-tool approach for data analysis, utilizing Python, R, and PowerBI for data cleaning, manipulation, and visualization:
+README: Predictive Analysis of Live Sheep Marketing Dataset to Develop Optimization Strategies
 
-Data Import and Preparation:
+1. Project Overview
+This project focuses on the predictive analysis of the global sheep trade, using historical data from 1961 to 2013 to forecast trends in sheep exports. The study aims to optimize market strategies by identifying patterns, comparing country performances, and understanding the relationship between export quantities and values. Leveraging FAOSTAT data, the project utilizes advanced machine learning models to develop actionable insights, helping stakeholders make data-driven decisions to enhance agricultural trade efficiency and sustainability.
 
-Datasets were imported using pandas in Python, readr in R, and Power Query Editor in PowerBI.
-Missing values were replaced with median values, and consistency checks were performed to ensure data quality.
-Visualization Techniques:
+The project integrates various techniques, including data preprocessing, exploratory data analysis (EDA), and predictive modeling with algorithms like Linear Regression, Random Forest, K-Nearest Neighbors (KNN), and Support Vector Regression (SVR).
 
-Tree Map: Used to visualize hierarchical data, highlighting proportions in consumer expenditures.
-Area Chart: Displayed cumulative global population growth over time.
-Stacked Area Chart: Showed part-to-whole relationships in consumer spending categories over time.
-Step Chart: Highlighted changes in postage prices at irregular intervals.
-Tools Used:
+2. Methodology
+Data Importation & Preprocessing
+Data Cleaning: Handled missing values and outliers to ensure data integrity.
+Feature Engineering: Created new time-based features and performed one-hot encoding for categorical variables.
+Data Transformation: Converted categorical data (e.g., country names) to numerical formats.
+Exploratory Data Analysis (EDA)
+Trend Analysis: Identified export trends over time using time series plots.
+Country Comparison: Analyzed top exporters and their performance.
+Correlation Analysis: Used scatter plots and correlation coefficients to examine the relationship between export quantities and values.
+Predictive Modeling
+Model Selection: Evaluated models like Linear Regression, Random Forest, KNN, and SVR.
+Model Training & Tuning: Split the data into training and testing sets, followed by hyperparameter optimization using GridSearchCV.
+Model Evaluation: Metrics used included Mean Squared Error (MSE), Mean Absolute Error (MAE), R-squared (R²), Explained Variance Score (EVS), and Mean Absolute Percentage Error (MAPE).
+Visualization
+Generated visualizations using matplotlib and seaborn for better interpretation of results, including time series plots, bar charts, and feature importance graphs.
 
-Python: Employed for data manipulation and advanced visualizations using matplotlib and seaborn.
-R: Used for complex statistical analysis and creating detailed visualizations with ggplot2.
-PowerBI: Provided interactive dashboards, ideal for dynamic exploration and stakeholder presentations.
-Key Findings
-Population Growth: The global population grew steadily from 3 billion in 1960 to 6.7 billion in 2009, driven by healthcare improvements and high birth rates in specific regions. The area chart effectively illustrates this sustained demographic trend.
+3. Key Findings
+Export Trends: The analysis revealed a significant fluctuation in sheep export quantities, peaking at nearly 99.9 million heads in 2013.
+Top Exporters: Australia, Europe, and Africa consistently ranked among the leading exporters.
+Strong Correlation: A positive correlation (r = 0.93) was found between export quantities and values, indicating that higher export volumes correspond to increased revenues.
+Model Performance
+Linear Regression: Achieved an R² of 1.0 for both export quantities and values, suggesting a near-perfect fit.
+Random Forest: Performed better for predicting export values with an R² of 0.86.
+K-Nearest Neighbors: Showed moderate performance with an R² of 0.83 for export values.
+Support Vector Regression: Struggled to generalize, with poor performance metrics in both categories.
 
-Unemployment Trends: U.S. unemployment rates showed cyclical patterns, peaking during economic recessions such as the 1980s and 2008 financial crises. Step charts highlighted the labor market's sensitivity to economic downturns.
+4. Implications and Applications
+Market Strategy Optimization: Insights can help stakeholders optimize supply chains, set pricing strategies, and adapt to market fluctuations.
+Policy Development: Findings can guide policymakers in creating effective trade policies, especially in volatile markets.
+Sustainable Agriculture: The project supports sustainable agricultural practices by providing data-driven insights into market dynamics.
 
-Consumer Expenditures: Housing and food consistently dominated consumer spending, as shown by tree maps, reflecting their essential nature. Healthcare and personal insurance spending increased, pointing to evolving economic priorities.
+5. Ethical Considerations
+Data Privacy: All data was sourced from publicly available datasets and anonymized to ensure compliance with privacy standards.
+Bias Mitigation: The analysis focused on reducing model bias to provide fair and accurate predictions.
+Transparency: Emphasized clear documentation of methodologies and results to build trust in the findings.
 
-Postage Prices: Postage prices exhibited a gradual upward trend, reflecting inflation and rising operational costs, as visualized by step charts.
+6. Future Directions
+Feature Enhancements: Integrate additional factors like economic indicators, climate data, and trade policies for better accuracy.
+Cloud Integration: Utilize cloud platforms for scalable data processing and storage.
+Advanced Algorithms: Explore deep learning models to improve predictions, especially for volatile markets.
 
-Implications and Applications
-The analysis demonstrates the strengths of combining Python, R, and PowerBI for a comprehensive examination of socioeconomic data. Python’s flexibility makes it ideal for complex data manipulation, R excels in statistical analysis, and PowerBI offers intuitive, interactive dashboards. This multi-tool approach allows for robust insights into socioeconomic trends, supporting data-driven decision-making.
-
-Ethical Considerations
-All data used is publicly available and devoid of sensitive personal information. The analysis adheres to ethical standards, with transparency in data handling and methodology to ensure accurate and reproducible results.
-
-Future Directions
-Future work should focus on integrating the strengths of Python, R, and PowerBI. Detailed data manipulation and statistical analysis can be conducted using Python or R, followed by interactive visualization and presentation in PowerBI. This combined approach will enhance the interpretation and communication of complex socioeconomic trends, supporting more informed decision-making.
-
-Contact
+7. Contact
 For further information or collaboration inquiries, please contact the project lead at zemelak.s.goraga@gmail.com.
