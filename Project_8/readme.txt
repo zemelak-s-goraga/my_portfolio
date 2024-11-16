@@ -1,42 +1,50 @@
-README: Analyzing Socioeconomic Data Using Python, R, and PowerBI
-Project Overview
-This project analyzes four distinct socioeconomic datasets using Python, R, and PowerBI to explore global population growth, U.S. unemployment trends, consumer expenditures, and postage price changes. Each tool—Python, R, and PowerBI—demonstrates unique strengths in data manipulation, statistical analysis, and visualization, providing comprehensive insights into complex socioeconomic trends over multiple decades.
 
-Methodology
-The project employed a multi-tool approach for data analysis, utilizing Python, R, and PowerBI for data cleaning, manipulation, and visualization:
+README: Predictive Analysis of SpaceX Falcon 9 Rocket Launch Success
 
-Data Import and Preparation:
+1. Project Overview
+This project focuses on predicting the success of SpaceX Falcon 9 rocket landings by analyzing historical launch data. By leveraging data science techniques such as exploratory data analysis (EDA), interactive visual analytics, and machine learning models, the objective was to understand the factors influencing successful landings and optimize future launches. The project utilized data collected from the SpaceX API and web scraping, followed by data wrangling, visualization, and predictive analytics to forecast landing outcomes. The results provide actionable insights to help SpaceX reduce launch costs and increase efficiency.
 
-Datasets were imported using pandas in Python, readr in R, and Power Query Editor in PowerBI.
-Missing values were replaced with median values, and consistency checks were performed to ensure data quality.
-Visualization Techniques:
+2. Methodology
+Data Collection & Wrangling
+Data Sources: Data was gathered using the SpaceX API and web scraping from Wikipedia.
+Data Cleaning: Missing values were handled, particularly in the LandingPad and PayloadMass columns.
+Feature Engineering: One-hot encoding was applied to categorical variables like BoosterVersion.
+Exploratory Data Analysis (EDA)
+Visualized relationships between flight number, launch site, orbit type, and payload mass.
+Conducted SQL queries to analyze mission outcomes, payload mass, and launch success trends.
+Interactive Visual Analytics
+Folium Maps: Created interactive maps to visualize launch sites and their success rates.
+Plotly Dash: Built dashboards with filters for payload ranges, launch sites, and outcomes.
+Predictive Modeling
+Applied machine learning algorithms, including:
+Decision Tree
+Support Vector Machine (SVM)
+Random Forest
+K-Nearest Neighbors (KNN)
+Models were trained and tuned to improve prediction accuracy, with DecisionTree performing the best (accuracy: 87.3%).
 
-Tree Map: Used to visualize hierarchical data, highlighting proportions in consumer expenditures.
-Area Chart: Displayed cumulative global population growth over time.
-Stacked Area Chart: Showed part-to-whole relationships in consumer spending categories over time.
-Step Chart: Highlighted changes in postage prices at irregular intervals.
-Tools Used:
+3. Key Findings
+Launch Site Success: KSC LC-39A had the highest success rate among all launch sites.
+Orbit Success Rates: Orbits like ES-L1, GEO, HEO, and SSO had the highest success rates.
+Payload Influence: Higher payload mass generally led to more successful landings, particularly in low Earth orbits.
+Yearly Trends: Launch success rates improved significantly from 2013 onwards, peaking in 2019.
 
-Python: Employed for data manipulation and advanced visualizations using matplotlib and seaborn.
-R: Used for complex statistical analysis and creating detailed visualizations with ggplot2.
-PowerBI: Provided interactive dashboards, ideal for dynamic exploration and stakeholder presentations.
-Key Findings
-Population Growth: The global population grew steadily from 3 billion in 1960 to 6.7 billion in 2009, driven by healthcare improvements and high birth rates in specific regions. The area chart effectively illustrates this sustained demographic trend.
+4. Implications and Applications
+The insights from this project can help optimize SpaceX's operations:
 
-Unemployment Trends: U.S. unemployment rates showed cyclical patterns, peaking during economic recessions such as the 1980s and 2008 financial crises. Step charts highlighted the labor market's sensitivity to economic downturns.
+Target Launch Sites: Focus on high-performing sites like KSC LC-39A to maximize success rates.
+Payload Optimization: Fine-tune payload mass for improved landing success, especially for orbits like LEO and ISS.
+Predictive Insights: Leverage the DecisionTree model to inform decision-making for future launches, reducing costs and improving reliability.
 
-Consumer Expenditures: Housing and food consistently dominated consumer spending, as shown by tree maps, reflecting their essential nature. Healthcare and personal insurance spending increased, pointing to evolving economic priorities.
+5. Ethical Considerations
+Data Privacy: The analysis was conducted using publicly available datasets, ensuring compliance with privacy standards.
+Transparency: Models and findings were documented clearly to maintain transparency.
+Bias Mitigation: Efforts were made to avoid model bias and ensure fair and accurate predictions.
 
-Postage Prices: Postage prices exhibited a gradual upward trend, reflecting inflation and rising operational costs, as visualized by step charts.
+6. Future Directions
+Real-Time Data Integration: Incorporate real-time launch data to continuously update models.
+Advanced Feature Engineering: Include additional features like weather conditions and wind speed for improved accuracy.
+Expand Analysis: Apply the methodology to other rocket types, such as Falcon Heavy, to broaden insights.
 
-Implications and Applications
-The analysis demonstrates the strengths of combining Python, R, and PowerBI for a comprehensive examination of socioeconomic data. Python’s flexibility makes it ideal for complex data manipulation, R excels in statistical analysis, and PowerBI offers intuitive, interactive dashboards. This multi-tool approach allows for robust insights into socioeconomic trends, supporting data-driven decision-making.
-
-Ethical Considerations
-All data used is publicly available and devoid of sensitive personal information. The analysis adheres to ethical standards, with transparency in data handling and methodology to ensure accurate and reproducible results.
-
-Future Directions
-Future work should focus on integrating the strengths of Python, R, and PowerBI. Detailed data manipulation and statistical analysis can be conducted using Python or R, followed by interactive visualization and presentation in PowerBI. This combined approach will enhance the interpretation and communication of complex socioeconomic trends, supporting more informed decision-making.
-
-Contact
+7. Contact
 For further information or collaboration inquiries, please contact the project lead at zemelak.s.goraga@gmail.com.
