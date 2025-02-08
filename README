@@ -1,7 +1,7 @@
 # Data Science Portfolio
 
-Welcome to my Data Science Portfolio! This repository showcases my projects at Bellevue University (Project 1-12), SkyLimit Publishing, and EIAR. 
-I have completed, each highlighting a different aspect of data science, including data cleaning, exploratory data analysis, machine learning, and deep learning.
+Welcome to my Data Science Portfolio! This repository showcases my projects at Bellevue University, UpWork, Virginia Community College, SkyLimit Publishing, and EIAR. 
+Each project highlighting a different aspect of data science, including data cleaning, exploratory data analysis, machine learning, and deep learning.
 In addition to projects, you can also find some of my published books and journals.
 
 
@@ -90,4 +90,5 @@ Project 12: Enhancing Restaurant Menu Personalization through Food Image Analysi
 - Tech Stack: Python, Convolutional Neural Networks (CNN), data visualization.
 - [More Details](./Project_12/README.md)
 
+Other Projects detailes can be found in the project direct
 
